@@ -17,7 +17,7 @@ resource "aws_instance" "servidor" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("desafio-pse")
+    private_key = file("chave")
     host        = self.public_ip
   }
 }
